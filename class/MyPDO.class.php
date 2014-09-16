@@ -1,9 +1,9 @@
 <?php
-class MyPDO extends PDO{
+class MyPDO{
     public static $instance;
     
     private function __construct(){
-        self::$instance = parent::__construct(
+        self::$instance = new PDO(
             "mysql:host=localhost;dbname=SEC-UGB;charset=utf8", 
             "root", 
             "021$", 
@@ -13,7 +13,7 @@ class MyPDO extends PDO{
     
     public static function getInstance(){
         if(self::$instance==null){
-            self::$instance = new Connection;
+            self::$instance = new MyPDO();
         }
         return self::$instance;
     }
