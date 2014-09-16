@@ -1,24 +1,19 @@
 <?php
 class MyPDO{
     public static $instance;
+    public $con;
     
     private function __construct(){
-        self::$instance = new PDO(
-            "mysql:host=localhost;dbname=SEC-UGB;charset=utf8", 
-            "root", 
-            "021$", 
-            null
-        );
+        $this->con = new PDO("mysql:host=localhost;dbname=Login;","root","021$");
     }
     
     public static function getInstance(){
-        if(self::$instance==null){
-            self::$instance = new MyPDO();
+        if(empty(self::$instance)){
+           self::$instance = new MyPDO();
         }
         return self::$instance;
     }
 }
 
-$mypdo = MyPDO::getInstance();
-var_dump($mypdo);
-
+/*$mycon = MyPDO::getInstance();
+var_dump($mycon);*/
