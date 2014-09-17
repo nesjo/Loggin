@@ -4,7 +4,7 @@ class MyPDO{
     public $con;
     
     private function __construct(){
-        $this->con = new PDO("mysql:host=localhost;dbname=Login;","root","021$");
+        $this->con = new PDO("mysql:host=localhost;dbname=Login","root","021$");
     }
     
     public static function getInstance(){
