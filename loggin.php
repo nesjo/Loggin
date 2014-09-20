@@ -12,6 +12,12 @@
                 margin: 0 auto;
                 margin-top: 50px;
             }
+            #botones{
+                text-align: center;
+            }
+            #botones > button{
+                margin: 5px;
+            }
         </style>
     </head>
     <body>
@@ -21,7 +27,10 @@
                     <h2 class="form-signin-heading">Please sign in</h2>
                     <input type="text" class="form-control" placeholder="Email address" required="" autofocus="">
                     <input type="password" class="form-control" placeholder="Password" required="">
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    <div id="botones" class="input-group center-block">
+                        <button class="btn btn-primary" type="submit">Sign in</button>
+                        <button class="btn btn-danger" type="reset">Cancel</button>
+                    </div>
                 </form>
             </div>
         </div>
