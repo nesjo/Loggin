@@ -1,6 +1,6 @@
 <?php
-include_once './Connection.php';
-include_once './Users.php';
+/*include_once './Connection.php';
+include_once './Users.php';*/
 /**
  * Description of UsersDAO
  * @author allexiusw
@@ -32,11 +32,11 @@ class UsersDAO {
         return $stmt->fetchAll();
     }
 }
-$user = new Users("test", md5("testd"));
+/*$user = new Users("test", md5("testd"));
 $userDAO = new UsersDAO(Connection::getInstance());
 $rows= $userDAO->checkAccess($user);
 if($rows):
     $user->initSession();
 else:
     echo "Ud no esta registrado";
-endif;
+endif;*/
