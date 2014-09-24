@@ -18,18 +18,18 @@ if($_POST):
 endif;
 ?>
 <!doctype html>
-<html>
+<html lang="es">
     <head>
-        <title>My Application PDO</title>
-        <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-        <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Bootstrap Integration Loggin</title>
+        <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
         <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
-        <style>
-            .jumbotron, #mensaje{
-                max-width: 400px;
+        <style rel="stylesheet">   
+            .jumbotron{
+                max-width: 550px;
                 margin: 0 auto;
-                margin-top: 50px;
+                margin-top: 25px;
             }
             #botones{
                 text-align: center;
@@ -59,4 +59,4 @@ endif;
             </div>
         </div>
     </body>
-</html
+</html>
