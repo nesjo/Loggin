@@ -27,7 +27,6 @@ endif;
         <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
         <style>
-            
             .jumbotron, #mensaje{
                 max-width: 400px;
                 margin: 0 auto;
