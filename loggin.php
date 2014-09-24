@@ -16,7 +16,6 @@ if($_POST):
         $error =2;
     endif;
 endif;
-
 ?>
 <!doctype html>
 <html>
@@ -60,5 +59,4 @@ endif;
             </div>
         </div>
     </body>
-</html>
-
+</html
