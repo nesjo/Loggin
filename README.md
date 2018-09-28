@@ -17,7 +17,7 @@ Go to /var/www/html/ and clone the project
 git clone https://github.com/allexsv/Loggin.git
 ```
 
-##Step 2
+### Step 2
 Create Database en table for project
 ```
 mysql -u root -p 
