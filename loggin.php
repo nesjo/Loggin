@@ -8,10 +8,11 @@ if($_POST):
     $con = Connection::getInstance();
     $user = new Users($_POST['user'], md5($_POST['pass']));
     $userDAO = new UsersDAO($con);
-    $rows = $userDAO->checkAccess($user);
+    $rows = $userDAO->checkAcces($user);
     if($rows):
+	$_SESSION["loggin"]="OK";
         $user->initSession();
-        header("location: index.php");
+        header("location: welcome.php");
     else:
         $error =2;
     endif;

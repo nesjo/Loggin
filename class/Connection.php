@@ -10,7 +10,7 @@ class Connection {
     public static $instance = null;
     
     private function __construct() {
-        $this->con = new PDO("mysql:host=localhost;dbname=Login","root","021$");
+        $this->con = new PDO("mysql:host=localhost;dbname=Loggin","test","021$$");
     }
     
     public static function getInstance(){

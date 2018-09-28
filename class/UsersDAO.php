@@ -1,7 +1,4 @@
 <?php
-session_start();
-include_once './MyPDO.class.php';
-include_once './Users.class.php';
 /**
  * Description of UsersDAO
  *
